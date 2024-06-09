@@ -136,6 +136,27 @@
     padding-bottom: 5px;
 }
 
+.follow-me {
+    display: flex;
+    align-items: center;
+}
+
+.follow-me p {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+/* Media query for adjusting layout on mobile devices */
+@media (max-width: 768px) {
+    .follow-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .follow-me p {
+        margin-bottom: 10px; /* Adjust as needed */
+        margin-right: 0;
+    }
+}
     </style>
 </head>
 <body>
@@ -153,12 +174,24 @@
 
 <section id="home">
     <div class="container">
-        <div style="position: absolute; bottom: 305px; left: 75%; transform: translateX(-50%); z-index: 999;">
-            <p style="font-size: 14px; color: white; text-align: right;">Visit My LinkedIn Profile</p>
+        <!-- Add the "Follow Me" text beside the image -->
+        <div class="follow-me">
+            <p>Visit My LinkedIn Profile</p>
+            <!-- Add the LinkedIn icon with a link to your LinkedIn account -->
+            <a href="https://www.linkedin.com/your-account" target="_blank" title="Visit my LinkedIn profile">
+                <img src="linkedin-icon.jpg" alt="LinkedIn" width="40" height="40">
+            </a>
         </div>
-        <a href="https://www.linkedin.com/in/madan-reddy-6177099b/" target="_blank" title="Visit my LinkedIn profile">
-            <img src="linkedin-icon.jpg" alt="LinkedIn" width="40" height="40" style="position: absolute; top: 33px; right: 328px; z-index: 999;">
-        </a>
+<!--    <div class="container">-->
+<!--        <div style="position: absolute; bottom: 305px; left: 75%; transform: translateX(-50%); z-index: 999;">-->
+<!--            <p style="font-size: 14px; color: white; text-align: right;">Visit My LinkedIn Profile</p>-->
+<!--        </div>-->
+
+<!--        <p style="font-size: 14px; color: white; text-align: right; absolute; bottom: 105px; left: 15%;">Visit My LinkedIn Profile</p>-->
+
+<!--        <a href="https://www.linkedin.com/in/madan-reddy-6177099b/" target="_blank" title="Visit my LinkedIn profile">-->
+<!--            <img src="linkedin-icon.jpg" alt="LinkedIn" width="40" height="40" style="position: absolute; top: 33px; right: 328px; z-index: 999;">-->
+<!--        </a>-->
         <h2>Welcome to Madan Mohan Reddy Test Automation Portfolio</h2>
         <p>SME on Automation Frameworks AND Test Automation Engineer</p>
         <div id="home-buttons">
