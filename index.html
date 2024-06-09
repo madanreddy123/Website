@@ -19,8 +19,8 @@
 
         header {
             background-color: #f8f9fa;
-            padding: 5px 0; /* Reduced padding to move the header up */
-            border-bottom: 1px solid #e9ecef;
+            padding: 30px 0; /* Reduced padding to move the header up */
+            border-bottom: 3px solid #e9ecef;
             position: relative; /* Allow absolute positioning of nav */
         }
 
@@ -32,7 +32,7 @@
         nav {
             position: absolute;
             top: 50%; /* Center vertically */
-            right: 0; /* Align to the right */
+            right: 10%; /* Align to the right */
             transform: translateY(-50%); /* Center vertically */
         }
 
@@ -44,7 +44,7 @@
 
         nav ul li {
             display: inline;
-            margin-left: 20px;
+            margin-left: 10px;
         }
 
         nav ul li a {
@@ -141,7 +141,7 @@
 <body>
 <header>
     <div class="container">
-        <h1>ENUGU MADAN MOHAN REDDY</h1>
+<!--        <h1>ENUGU MADAN MOHAN REDDY</h1>-->
         <nav>
             <ul>
                 <li><a onclick="showSection('home')">Home</a></li>
@@ -229,9 +229,6 @@
 <section id="skills">
     <div class="container">
         <h2>Skills</h2>
-        <div class="book-list">
-            <div class="book-item">
-                <h3>Skills</h3>
                 <p>Selenium WebDriver using Java</p>
                 <p>Selenium Grid</p>
                 <p>Cucumber Framework (BDD)</p>
@@ -245,15 +242,15 @@
                 <p>Docker</p>
                 <p>Appium</p>
             </div>
-        </div>
-    </div>
 </section>
 
 <section id="contact">
-    <h2 class="container">Contact</h2>
+    <div class="container">
+        <h2>Contact</h2>
     <p>Mobile Number: +353 899679102</p>
     <p>Email ID: mmohanreddy319@gmail.com</p>
     <!-- Add contact form or details as needed -->
+    </div>
 </section>
 <footer>
     <div class="container">
