@@ -49,10 +49,10 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #007bff;
+            color: #B0BF1A;
             cursor: pointer;
             padding: 10px 15px;
-            border-radius: 5px;
+            border-radius: 60px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
@@ -81,10 +81,10 @@
             margin: 0 10px;
             padding: 13px 20px;
             font-size: 13px;
-            background-color: #007bff;
+            background-color: #B0BF1A;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 70px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
@@ -97,11 +97,11 @@
             display: none;
             padding: 50px 0;
             background: url('5.jpg') no-repeat center center/cover;
-            color: white;
+            color: #FFF9E3;
         }
 
         section .container {
-            background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+            background: #A05544; /* Black background with 50% opacity */
             padding: 20px;
             border-radius: 10px;
         }
@@ -147,7 +147,7 @@
 
 /* Media query for adjusting layout on mobile devices */
 @media (max-width: 768px) {
-    .follow-me {
+     .follow-me {
         flex-direction: column;
         align-items: center;
     }
@@ -157,6 +157,29 @@
         margin-right: 0;
     }
 }
+
+   .flat-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the yellow button */
+.yellow-button {
+    color: black;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 2px solid yellow; /* Ensures the button remains yellow and flat */
+}
+
+.yellow-button:hover {
+    background-color: darkorange;
+    border: 2px solid darkorange; /* Change border color on hover for consistency */
+}
+
     </style>
 </head>
 <body>
@@ -193,9 +216,9 @@
 <!--            <img src="linkedin-icon.jpg" alt="LinkedIn" width="40" height="40" style="position: absolute; top: 33px; right: 328px; z-index: 999;">-->
 <!--        </a>-->
         <h2>Welcome to Madan Mohan Reddy Test Automation Portfolio</h2>
-        <p>SME on Automation Frameworks AND Senior QE Automation Engineer</p>
+        <p>SME on Automation Frameworks AND Test Automation Engineer</p>
         <div id="home-buttons">
-            <button onclick="showSection('resume')">RESUME</button>
+            <button class="flat-button yellow-button" onclick="showSection('resume')">RESUME</button>
         </div>
 
     </div>
