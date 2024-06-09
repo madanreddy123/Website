@@ -135,18 +135,35 @@
 .right-column ul li, .left-column ul li {
     padding-bottom: 5px;
 }
+        .menu-toggle {
+    display: none; /* Hide toggle menu by default */
+}
+
+/* Media query to display toggle menu on smaller screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show toggle menu on smaller screens */
+        cursor: pointer;
+        padding: 10px;
+    }
+}
     </style>
 </head>
 <body>
 <header>
     <div class="container">
-<!--        <h1>ENUGU MADAN MOHAN REDDY</h1>-->
         <nav>
-            <ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
                 <li><a onclick="showSection('home')">Home</a></li>
                 <li><a onclick="showSection('skills')">Skills</a></li>
                 <li><a onclick="showSection('contact')">Contact</a></li>
             </ul>
+            <div class="menu-background"></div>
         </nav>
     </div>
 </header>
