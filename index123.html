@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madan Mohan Reddy - Test Automation Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        header h1 {
+            display: inline;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        #hero {
+            background: url('4.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .book-list, .illustration-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .book-item, .illustration-gallery img {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .book-item img, .illustration-gallery img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label, form input, form textarea, form button {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Madan Mohan Reddy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Books</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Madan Mohan Reddy Test Automation Portfolio</h2>
+            <p>SME on Automation Frameworks AND AUTOMATION ENGINEER</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Madan</h2>
+            <p>Madan is Passionate towards Test Automation and his specialization lies in automation frameworks for both UI and Restassured automation. Over the years, He has developed, enhanced, and maintained automation frameworks using Selenium with Java and Cucumber with TestNG. Additionally, he has extensive knowledge and exposure to Appium for mobile automation, particularly Android. He has also serve as a Subject Matter Expert for automation frameworks in his current client project. He has also having the experience in running the automation build on OpenShift Pods and the remote desktop to reduce execution time using Selenium grid. Lastly, He prioritize staying updated on the latest tools, technologies, and methodologies in the field of test automation.</p>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <h3>Skills</h3>
+                    <p>Selenium WebDriver using Java</p>
+                    <p>Selenium Grid</p>
+                    <p>Cucumber Framework (BDD)</p>
+                    <p>Data-Driven Framework (TDD)</p>
+                    <p>TestNG Framework</p>
+                    <p>JUnit/TestNG</p>
+                    <p>Maven</p>
+                    <p>Git</p>
+                    <p>SQL Server</p>
+                    <p>Continuous Integration Tools (Jenkins, Bamboo)</p>
+                    <p>Docker</p>
+                    <p>Appium</p>
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="madanreddy319@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Madan Mohan Reddy.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
