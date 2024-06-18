@@ -19,15 +19,20 @@
 
         header {
             background-color: #f8f9fa;
-            padding: 1px 1; /* Reduced padding to move the header up */
-            border-bottom: 1px solid #e9ecef;
+            padding: 30px 0; /* Reduced padding to move the header up */
+            border-bottom: 3px solid #e9ecef;
             position: relative; /* Allow absolute positioning of nav */
         }
-
             h1 {
             text-align: center;
             margin-top: 1px;
-            font-size: 50px;
+            font-size: 35px;
+        }
+
+         h5 {
+            text-align: center;
+            margin-top: 1px;
+            font-size: 25px;
         }
 
         nav {
@@ -172,24 +177,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.header-container {
-  display: flex;
-  align-items: right;
-  justify-content: right;
-  height: 100%;
-  width: 100%;
-}
 
-.menu{
 
- border-radius: 2%;
-            margin-centre: 10px;
-             padding: 10px -20px;
-             margin-bottom: 1px;/* Adjust as needed */
-            width: 1039px; /* Adjust as needed */
-            height: 1px; /* Adjust as needed */
-<!--            display: block;-->
-}
 .profile-container {
   display: flex;
   align-items: center;
@@ -213,8 +202,8 @@
     }
 .profile-container-menu {
   display: flex;
-  align-items: left;
-  justify-content: left;
+  align-items: centre;
+  justify-content: centre;
   height: 100%;
   width: 100%;
 }
@@ -254,9 +243,6 @@
 <header>
     <div class="header-container">
 
-        <div class="profile-container-menu">
-            <img src="13.png" alt="Profile Picture" class="profile-pic1">
-        </div>
         <nav>
             <ul class="menu">
                 <li><a onclick="showSection('home')">HOME</a></li>
@@ -269,7 +255,9 @@
 
 <section id="home">
 <!--    <h1>SOFTWARE TEST AUTOMATION</h1>-->
-
+    <div class="profile-container-menu">
+        <img src="13.png" alt="Profile Picture" class="profile-pic1">
+    </div>
     <div class="profile-container">
         <img src="9.png" alt="Profile Picture" class="profile-pic">
     </div>
