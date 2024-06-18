@@ -19,8 +19,8 @@
 
         header {
             background-color: #f8f9fa;
-            padding: 30px 0; /* Reduced padding to move the header up */
-            border-bottom: 3px solid #e9ecef;
+            padding: 1px 1; /* Reduced padding to move the header up */
+            border-bottom: 1px solid #e9ecef;
             position: relative; /* Allow absolute positioning of nav */
         }
 
@@ -195,6 +195,21 @@
         display: block;
     }
 
+    .profile-pic1 {
+            border-radius: 90%;
+            margin-right: 100px;
+             padding: 10px 1px;
+             margin-top: -70px;/* Adjust as needed */
+            width: 349px; /* Adjust as needed */
+            height: 290px; /* Adjust as needed */
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+    .profile-pic1 {
+        display: block;
+    }
+
 
 
 /* Style for the yellow button */
@@ -215,6 +230,9 @@
 <body>
 <header>
     <div class="container">
+
+            <img src="13.png" alt="Profile Picture" class="profile-pic1">
+
         <nav>
             <ul class="menu">
                 <li><a onclick="showSection('home')">HOME</a></li>
