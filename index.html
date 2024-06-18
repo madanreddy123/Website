@@ -211,12 +211,17 @@
         display: block;
     }
 .profile-container-menu {
-  display: flex;
+  display: none;
   align-items: centre;
   justify-content: centre;
-  height: 100%;
-  width: 100%;
+  height: 10%;
+  width: 10%;
 }
+
+   @media (min-width: 768px) {
+    .profile-container-menu {
+        display: block;
+    }
     .profile-pic1 {
             border-radius: 1%;
             margin-right: 10px;
