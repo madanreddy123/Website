@@ -194,14 +194,20 @@
     .profile-pic {
         display: block;
     }
-
+.profile-container1 {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  height: 100%;
+  width: 100%;
+}
     .profile-pic1 {
             border-radius: 90%;
             margin-right: 100px;
              padding: 10px 1px;
-             margin-top: -70px;/* Adjust as needed */
-            width: 349px; /* Adjust as needed */
-            height: 290px; /* Adjust as needed */
+             margin-top: -30px;/* Adjust as needed */
+            width: 249px; /* Adjust as needed */
+            height: 220px; /* Adjust as needed */
             display: none;
         }
 
@@ -231,8 +237,9 @@
 <header>
     <div class="container">
 
+        <div class="profile-container1">
             <img src="13.png" alt="Profile Picture" class="profile-pic1">
-
+        </div>
         <nav>
             <ul class="menu">
                 <li><a onclick="showSection('home')">HOME</a></li>
