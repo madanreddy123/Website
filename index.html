@@ -55,7 +55,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #A05544;
+            color: #B0BF1A;
             cursor: pointer;
             padding: 10px 15px;
             border-radius: 60px;
@@ -74,8 +74,6 @@
             padding: 100px 0;
             position: relative;
         }
-
-
 
         #home-buttons {
             position: absolute;
@@ -213,26 +211,26 @@
         display: block;
     }
 .profile-container-menu {
-
-  align-items: centre;
-  justify-content: centre;
+  display: flex;
+  align-items: left;
+  justify-content: left;
   height: 10%;
   width: 10%;
-  display: centre;
+
 }
     .profile-pic1 {
             border-radius: 1%;
             margin-right: 10px;
-             padding: 1px 550px;
-             margin-top: -10px;/* Adjust as needed */
+             padding: 1px 50px;
+             margin-top: -150px;/* Adjust as needed */
             width: 329px; /* Adjust as needed */
             height: 270px; /* Adjust as needed */
-            display: none;
+            display: block;
 
         }
- @media (min-width: 768px) {
+ @media (max-width: 600px) {
     .profile-pic1 {
-        display: block;
+        display: none;
     }
 
 /* Style for the yellow button */
@@ -271,9 +269,9 @@
 
 <section id="home">
 <!--    <h1>SOFTWARE TEST AUTOMATION</h1>-->
-<!--    <div class="profile-container-menu">-->
-<!--        <img src="13.png" alt="Profile Picture" class="profile-pic1">-->
-<!--    </div>-->
+    <div class="profile-container-menu">
+        <img src="13.png" alt="Profile Picture" class="profile-pic1">
+    </div>
     <div class="profile-container">
         <img src="9.png" alt="Profile Picture" class="profile-pic">
     </div>
