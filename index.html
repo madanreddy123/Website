@@ -179,6 +179,28 @@
 }
 
 
+.profile-container1 {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  height: 100%;
+  width: 100%;
+}
+ .profile-pic1 {
+            border-radius: 1%;
+             padding: 1px 20px;
+             margin-top: -150px;/* Adjust as needed */
+            width: 235px; /* Adjust as needed */
+            height: 209px; /* Adjust as needed */
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+    .profile-pic1 {
+        display: none;
+    }
+
+
 .profile-container {
   display: flex;
   align-items: center;
@@ -186,52 +208,23 @@
   height: 100%;
   width: 100%;
 }
-
- .header-container {
-            border-radius: 12%;
-            margin-left: 10px;
-             padding-left: 1px 30px;
-             margin-top: 10px;/* Adjust as needed */
-            width: 199px; /* Adjust as needed */
-            height: 90px; /* Adjust as needed */
-
-        }
  .profile-pic {
-            border-radius: 12%;
-            margin-right: 1px;
-             padding: 10px 355px;
-             margin-top: -170px;/* Adjust as needed */
-            width: 1309px; /* Adjust as needed */
-            height: 420px; /* Adjust as needed */
-            display: none;
-        }
-
-        @media (min-width: 768px) {
-    .profile-pic {
-        display: block;
-    }
-.profile-container-menu {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  height: 10%;
-  width: 10%;
-
-}
-    .profile-pic1 {
             border-radius: 1%;
-            margin-right: 10px;
-             padding: 1px 50px;
-             margin-top: -150px;/* Adjust as needed */
-            width: 329px; /* Adjust as needed */
-            height: 270px; /* Adjust as needed */
+            margin-right: 1px;
+             padding: 0px 19px;
+              margin-top: -360px;/* Adjust as needed */
+<!--             margin-bottom: 59px;/* Adjust as needed */-->
+            width: 1595px; /* Adjust as needed */
+            height: 990px; /* Adjust as needed */
             display: block;
-
         }
- @media (max-width: 600px) {
-    .profile-pic1 {
+
+        @media (max-width: 768px) {
+    .profile-pic {
         display: none;
     }
+
+
 
 /* Style for the yellow button */
 .yellow-button {
@@ -245,12 +238,13 @@
     background-color: darkorange;
     border: 2px solid darkorange; /* Change border color on hover for consistency */
 }
+
     </style>
 </head>
 <body>
 <header>
-    <div class="header-container">
 
+    <div class="container">
         <nav>
             <ul class="menu">
                 <li><a onclick="showSection('home')">HOME</a></li>
@@ -262,16 +256,16 @@
 
 </header>
 
-
-
-
-
 <section id="home">
-<!--    <h1>SOFTWARE TEST AUTOMATION</h1>-->
-    <div class="profile-container-menu">
+
+    <!--    <div class="profile-container1">-->
+    <!--    <h1>SOFTWARE QUALITY AND AUTOMATION ENGINEERING</h1>-->
+    <!--    </div>-->
+    <div class="profile-container1">
         <img src="13.png" alt="Profile Picture" class="profile-pic1">
     </div>
     <div class="profile-container">
+
         <img src="9.png" alt="Profile Picture" class="profile-pic">
     </div>
 
@@ -285,16 +279,20 @@
                 <img src="linkedin-icon.jpg" alt="LinkedIn" width="40" height="40">
             </a>
         </div>
+        <!--    <div class="container">-->
+        <!--        <div style="position: absolute; bottom: 305px; left: 75%; transform: translateX(-50%); z-index: 999;">-->
+        <!--            <p style="font-size: 14px; color: white; text-align: right;">Visit My LinkedIn Profile</p>-->
+        <!--        </div>-->
 
+        <!--        <p style="font-size: 14px; color: white; text-align: right; absolute; bottom: 105px; left: 15%;">Visit My LinkedIn Profile</p>-->
+
+        <!--        <a href="https://www.linkedin.com/in/madan-reddy-6177099b/" target="_blank" title="Visit my LinkedIn profile">-->
+        <!--            <img src="linkedin-icon.jpg" alt="LinkedIn" width="40" height="40" style="position: absolute; top: 33px; right: 328px; z-index: 999;">-->
+        <!--        </a>-->
         <h2>Welcome to Madan Mohan Reddy Test Automation Portfolio</h2>
         <p>SME on Automation Frameworks AND Senior QE Automation Engineer</p>
-
-
         <div id="home-buttons">
             <button class="flat-button yellow-button" onclick="showSection('resume')">RESUME</button>
-<!--            <button class="flat-button yellow-button" onclick="showSection('skills')">SKILLS</button>-->
-<!--            <button class="flat-button yellow-button" onclick="showSection('contact')">CONTACT</button>-->
-
         </div>
 
     </div>
