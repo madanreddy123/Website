@@ -284,6 +284,29 @@ h1 {
                 font-size: 1.6rem; /* Reduce header font size on smaller screens */
             }
 
+            #home-buttons {
+         font-size: 1.6rem; /* Reduce header font size on smaller screens */
+
+    position: absolute;
+    top: 105%; /* Adjust the distance from the top */
+    left: 18%;
+    transform: translateX(-50%);
+    z-index: 999; /* Ensure the button is above other content */
+}
+
+#home-buttons button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 13px 10px;
+    font-size: 18px;
+    background-color: #EB5406;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
     header {
     background: url('different.jpg'); /* Semi-transparent background */
     padding: 46px 0; /* Adjust padding as needed */
@@ -316,11 +339,18 @@ h1 {
             </ul>
         </nav>
     </div>
+    <div id="home-buttons">
+
+        <button class="flat-button yellow-button" onclick="showSection('resume')">RESUME</button>
+
+    </div>
 </header>
 
 
 
 <section id="home">
+
+
     <!--    <h1>SOFTWARE TEST AUTOMATION</h1>-->
     <div class="profile-container">
         <img alt="Profile Picture" class="profile-pic1" src="logog1.png">
@@ -329,11 +359,7 @@ h1 {
 
     <div class="container">
 
-        <div id="home-buttons">
 
-            <button class="flat-button yellow-button" onclick="showSection('resume')">RESUME</button>
-
-        </div>
         <!-- Add the "Follow Me" text beside the image -->
         <div class="follow-me">
 
