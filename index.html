@@ -273,40 +273,47 @@ h1 {
                 display: none;
             }
 
-        .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    margin-bottom: 10px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-    padding: 8px 9px;
-    border-radius: 30px;
-    background-color: #EB5406;
-    transition: background-color 0.3s, color 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.menu a:hover {
-    background-color: #FF7722;
-    color: white;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
 @media (max-width: 768px) {
     .menu li {
         margin-bottom: 15px; /* Increase spacing between items */
     }
 }
 
-
+@media screen and (max-width: 768px) {
+            header {
+                font-size: 1.6rem; /* Reduce header font size on smaller screens */
+            }
+            h1 {
+                font-size: 1.8rem; /* Reduce main header font size on smaller screens */
+                text-align: center;
+                padding-left: 0;
+                margin-bottom: 10px;
+            }
+            .nav-buttons {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .nav-buttons button {
+                flex: 1 1 45%; /* Ensure buttons take up roughly half the width on smaller screens */
+                margin: 5px;
+            }
+    header {
+    background: url('different.jpg'); /* Semi-transparent background */
+    padding: 46px 0; /* Adjust padding as needed */
+    position: relative;
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and box-shadow */
+}
+            header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 46px 0; /* Adjust padding when sticky */
+    background: transparent; /* Darker background when sticky */
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.5); /* Increased shadow area */
+}
+        }
     </style>
 </head>
 <body>
