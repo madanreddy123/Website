@@ -24,23 +24,22 @@
             overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
-        header.sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 10px 0; /* Adjust padding when sticky */
-        }
-            header {
-                background: transparent; /* Make the header background transparent */
-            colour: #C19A6B;
-            padding: 30px 0; /* Adjust padding as needed */
-            position: relative;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            transition: background-color 0.3s ease, border-bottom 0.3s ease; /* Add transition for smooth effect */
-            border-bottom: 0px solid #e9ecef; /* Default border */
-        }
+     header {
+    background: transparent; /* Semi-transparent background */
+    padding: 20px 0; /* Adjust padding as needed */
+    position: relative;
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and box-shadow */
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0; /* Adjust padding when sticky */
+    background: rgba(0, 0, 0, 0.9); /* Darker background when sticky */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.5); /* Increased shadow area */
+}
 
         .scroll-down {
             border-bottom: none; /* Remove border when scrolling down */
@@ -260,21 +259,6 @@
             .profile-pic {
                 display: none;
             }
-
-
-
-        <!--/* Style for the yellow button */-->
-        <!--.yellow-button {-->
-        <!--    color: black;-->
-        <!--    background-color: yellow;-->
-        <!--    border-radius: 5px;-->
-        <!--    border: 2px solid yellow; /* Ensures the button remains yellow and flat */-->
-        <!--}-->
-
-        <!--.yellow-button:hover {-->
-        <!--    background-color: darkorange;-->
-        <!--    border: 2px solid darkorange; /* Change border color on hover for consistency */-->
-        <!--}-->
 
     </style>
 </head>
