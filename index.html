@@ -100,6 +100,143 @@ li {
     line-height: 1.6; /* Adjust line height for better readability */
     /* Add any additional styles as needed */
 }
+
+   .hand-drawn-text {
+            font-size: 1.1rem;
+            font-weight: bold;
+            position: relative;
+            animation: jitter 1s ease-in-out infinite;
+            padding: 10px;
+        }
+        @keyframes jitter {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(-2px, -2px);
+            }
+            50% {
+                transform: translate(2px, 2px);
+            }
+            75% {
+                transform: translate(-2px, 2px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @media (max-width: 768px) {
+
+            .hand-drawn-text {
+                font-size: 1rem;
+            }
+        }
+
+ .gradient-text {
+        font-size: 1rem;
+        font-weight: bold;
+        background: linear-gradient(#FBF6D9, #FFE6E8, #B0CFDE);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: animate-gradient 5s linear infinite;
+    }
+
+    @keyframes animate-gradient {
+        0% {
+            background-position: 0%;
+        }
+        100% {
+            background-position: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .gradient-text {
+            font-size: 2.5rem;
+        }
+    }
+ .underline-text {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #CCFFFF;
+        position: relative;
+        text-decoration: none;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .underline-text::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #F3E8EA;
+        transform: scaleX(0); /* Initially invisible */
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .underline-text:hover::after {
+        transform: scaleX(1); /* Expand underline on hover */
+        transform-origin: bottom left;
+    }
+
+    @media (max-width: 768px) {
+        .underline-text {
+            font-size: 2rem;
+        }
+    }
+
+
+    .neon-text {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+        animation: neon-glow 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes neon-glow {
+        from {
+            text-shadow: 0 0 10px #57FEFF, 0 0 20px #57FEFF, 0 0 30px #57FEFF, 0 0 40px #57FEFF, 0 0 50px #57FEFF, 0 0 60px #57FEFF, 0 0 70px #57FEFF;
+        }
+        to {
+            text-shadow: 0 0 20px #1B8A6B, 0 0 30px #1B8A6B, 0 0 40px #1B8A6B, 0 0 50px #1B8A6B, 0 0 60px #1B8A6B, 0 0 70px #1B8A6B, 0 0 80px #1B8A6B;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .neon-text {
+            font-size: 2.5rem;
+        }
+    }
+
+    .neon-text1 {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+        animation: neon-glow1 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes neon-glow1 {
+        from {
+            text-shadow: 0 0 10px #3EB489, 0 0 20px #3EB489, 0 0 30px #3EB489, 0 0 40px #3EB489, 0 0 50px #3EB489, 0 0 60px #3EB489, 0 0 70px #3EB489;
+        }
+        to {
+            text-shadow: 0 0 20px #22CE83, 0 0 30px #22CE83, 0 0 40px #22CE83, 0 0 50px #22CE83, 0 0 60px #22CE83, 0 0 70px #22CE83, 0 0 80px #22CE83;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .neon-text1 {
+            font-size: 2.5rem;
+        }
+    }
+
+
+
+
 h1 {
     text-align: center;
     margin-top: 1px;
@@ -187,13 +324,13 @@ h1 {
                  section h3 {
                     text-align: center;
                     margin-bottom: 20px;
-                    font-size: 18px;
+                    font-size: 21px;
                 }
 
                   section p {
                     text-align: centre;
                     margin-bottom: 20px;
-                    font-size: 15px;
+                    font-size: 18px;
                 }
 
                 footer {
@@ -380,9 +517,9 @@ h1 {
 <section id="home">
 
     <div class="home-buttons">
-
+        <div class="hand-drawn-text">
         <button class="flat-button yellow-button" onclick="showSection('resume')">RESUME</button>
-
+        </div>
     </div>
     <!--    <h1>SOFTWARE TEST AUTOMATION</h1>-->
     <div class="profile-container">
@@ -393,31 +530,43 @@ h1 {
     <div class="container">
 
 
+
         <!-- Add the "Follow Me" text beside the image -->
         <div class="follow-me">
+            <div class="gradient-text">
+                <p>Visit My LinkedIn Profile</p>
+            </div>
 
-            <p>Visit My LinkedIn Profile</p>
             <!-- Add the LinkedIn icon with a link to your LinkedIn account -->
+            <div class="hand-drawn-text">
+
             <a href="https://www.linkedin.com/in/madan-reddy-6177099b/" target="_blank"
                title="Visit my LinkedIn profile">
                 <img alt="LinkedIn" height="40" src="linkedin-icon.jpg" width="40">
             </a>
+            </div>
+        </div>
+        <div class="neon-text">
+            <h1>Welcome to Madan Mohan Reddy Test Automation Portfolio</h1>
 
         </div>
 
-        <h1>Welcome to Madan Mohan Reddy Test Automation Portfolio</h1>
-        <h2>SME on Automation Frameworks AND Senior QE Automation Engineer</h2>
+        <div class="neon-text1">
 
+            <h2>SME on Automation Frameworks AND Senior QE Automation Engineer</h2>
 
-
-
+        </div>
 
     </div>
 </section>
 
 <section id="about-details">
     <div class="container">
-        <h2>ABOUT MADAN</h2>
+
+        <div class="neon-text">
+            <h2>ABOUT MADAN</h2>
+        </div>
+        <div class="hand-drawn-text">
         <ul>
 
         <li>Madan is Passionate towards Test Automation and his specialization lies in automation frameworks for both UI
@@ -431,15 +580,25 @@ h1 {
         <li>Lastly, He prioritize staying updated on the latest tools, technologies, and methodologies in the field of
             test automation.</li>
             </ul>
+
+        </div>
     </div>
 </section>
 <section id="resume">
     <div class="container">
         <div class="left-column">
-            <h2>Experience</h2>
+            <div class="neon-text">
+                <h2>Experience</h2>
+            </div>
+
             <div id="resume-content">
-                <h3>Senior QE Automation Engineer</h3>
+                <div class="underline-text">
+                    <h3>Senior QE Automation Engineer</h3>
+
+                </div>
+
                 <!--                <p>Sogeti part of Capgemini, Dublin, September 2021 — Present</p>-->
+                <div class="hand-drawn-text">
                 <ul>
                     <li>Working as an SME for UI and Rest assured Automation Framework for all the other automation
                         testers in client environment
@@ -464,11 +623,17 @@ h1 {
                     </li>
                 </ul>
             </div>
+            </div>
         </div>
         <div class="right-column">
-            <h2>Additional Experience</h2>
-            <h3>Test Automation Engineer</h3>
+            <div class="neon-text">
+                <h2>Additional Experience</h2>
+            </div>
+            <div class="underline-text">
+                <h3>Test Automation Engineer</h3>
+            </div>
             <!--            <p>CapGenSoft Pvt LTD, Hyderabad, September 2014 — September 2018</p>-->
+            <div class="hand-drawn-text">
             <ul>
                 <li>Understanding the requirements and designing and developing automated functional tests</li>
                 <li>Involving in the sprint planning and meetings</li>
@@ -496,36 +661,54 @@ h1 {
                 </li>
             </ul>
         </div>
+        </div>
     </div>
 </section>
 
 <section id="skills">
 
     <div class="container">
-        <h2>Skills</h2>
+        <div class="neon-text">
+            <h2>Skills</h2>
+        </div>
+
         <div class="left-column">
-            <h3>Automation Framework</h3>
+            <div class="underline-text">
+                <h3>Automation Frameworks</h3>
+            </div>
+
+            <div class="hand-drawn-text">
                 <ul>
                     <li>Cucumber Framework (BDD)</li>
                     <li>Data-Driven Framework (TDD)</li>
                     <li>TestNG Framework</li>
                 </ul>
+            </div>
+
 
         </div>
         <div class="right-column">
-            <h3>Tools and Programming languages</h3>
-            <ul>
-                <li>Selenium WebDriver using Java</li>
-                <li>Selenium Grid</li>
-                <li>Maven</li>
-                <li>Git</li>
-                <li>JUnit/TestNG</li>
-                <li>SQL Server</li>
-                <li>Continuous Integration Tools (Jenkins, Bamboo)</li>
-                <li>Docker</li>
-                <li>Appium</li>
-                <li>X-path</li>
-            </ul>
+
+            <div class="underline-text">
+                <h3>Tools and Programming languages</h3>
+
+            </div>
+
+            <div class="hand-drawn-text">
+                <ul>
+                    <li>Selenium WebDriver using Java</li>
+                    <li>Selenium Grid</li>
+                    <li>Maven</li>
+                    <li>Git</li>
+                    <li>JUnit/TestNG</li>
+                    <li>SQL Server</li>
+                    <li>Continuous Integration Tools (Jenkins, Bamboo)</li>
+                    <li>Docker</li>
+                    <li>Appium</li>
+                    <li>X-path</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
@@ -533,19 +716,27 @@ h1 {
 
 <section id="contact">
     <div class="container">
-        <h2>Contact</h2>
+        <div class="neon-text">
+            <h2>Contact</h2>
+        </div>
+        <div class="hand-drawn-text">
         <p>Mobile Number: +353 899679102</p>
         <p>Email ID: mmohanreddy319@gmail.com</p>
         <!-- Add contact form or details as needed -->
+    </div>
     </div>
 </section>
 
 <section id="certification">
     <div class="container">
-        <h2>Certifications</h2>
+        <div class="neon-text">
+            <h2>Certifications</h2>
+        </div>
+        <div class="hand-drawn-text">
         <p>ISTQB Agile Tester</p>
         <p>ISTQB Foundation level</p>
         <p>ISTQB Advanced Test Automation</p>
+    </div>
     </div>
 </section>
 
