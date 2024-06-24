@@ -101,48 +101,6 @@ li {
     /* Add any additional styles as needed */
 }
 
-.hover-effect {
-    transition: transform 0.9s;
-    margin-top: 9px;/* Adjust as needed */
-}
-.hover-effect:hover {
- transform: scaleX(1.1);
-
-
-}
-
-.hover-effect:hover1 {
-
-    transform: scaleY(1.1);
-
-}
-
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
-}
-.bounce {
-    animation: bounce 2s infinite;
-}
-
-.text-glow {
-    color: #FBF6D9;
-     font-weight: bold;
-    text-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
-    transition: text-shadow 0.3s;
-}
-.text-glow:hover {
-    text-shadow: 0 0 15px rgba(52, 152, 219, 0.8);
-}
-
    .hand-drawn-text {
             font-size: 1.1rem;
             font-weight: bold;
@@ -198,6 +156,39 @@ li {
             font-size: 2.5rem;
         }
     }
+ .underline-text {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #CCFFFF;
+        position: relative;
+        text-decoration: none;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .underline-text::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #F3E8EA;
+        transform: scaleX(0); /* Initially invisible */
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .underline-text:hover::after {
+        transform: scaleX(1); /* Expand underline on hover */
+        transform-origin: bottom left;
+    }
+
+    @media (max-width: 768px) {
+        .underline-text {
+            font-size: 2rem;
+        }
+    }
+
 
     .neon-text {
         font-size: 4rem;
@@ -252,16 +243,17 @@ h1 {
     font-size: 33px;
     margin-bottom: 20px; /* Adjust as needed */
     padding-bottom: 10px 10px 10px 30px; /* Adjust as needed */
-<!--    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Example box shadow */-->
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Example box shadow */
 }
 
 .home-buttons {
     position: absolute;
-    top: 58%; /* Adjust the distance from the top */
+    top: 60%; /* Adjust the distance from the top */
     right: 40%;
     transform: translateX(-50%);
     z-index: 999; /* Ensure the button is above other content */
-
+     gap: 1rem;
+     animation: float 3s ease-in-out infinite;
      display:block;
 }
 
@@ -269,11 +261,12 @@ h1 {
         .home-buttons {
         display:block;
     position: absolute;
-    top: 90%; /* Adjust the distance from the top */
-     left: 42%;
+    top: 95%; /* Adjust the distance from the top */
+     left: 44%;
     transform: translateX(-50%);
     z-index: 999; /* Ensure the button is above other content */
-
+     gap: 1rem;
+     animation: float 3s ease-in-out infinite;
 }
 
         }
@@ -301,7 +294,7 @@ h1 {
         }
 
 #home-buttons button:hover {
-    background-color: transparent;
+    background-color: #FF7722;
 }
                 section {
                     display: none;
@@ -409,39 +402,41 @@ h1 {
         }
          .profile-pic1 {
                     border-radius: 20%;
-                    margin-left: 90px;
+                    margin-left: 790px;
                      padding: 1px 0px;
-                     margin-top: -39px;/* Adjust as needed */
+                     margin-top: -569px;/* Adjust as needed */
                     width: 209px; /* Adjust as needed */
                     height: 190px; /* Adjust as needed */
                     display: block;
-
+                    gap: 1rem;
+     animation: float 3s ease-in-out infinite;
                 }
 
                 @media (max-width: 768px) {
             .profile-pic1 {
                 display: block;
                 width: 205px;
-                 margin-left: 30px;
+                 margin-left: 270px;
                 height: 195px;
                 left: 1%;
                  padding: 1px 35px;
-                 margin-top: -100px;/* Adjust as needed */
-
+                 margin-top: -1px;/* Adjust as needed */
+                  gap: 1rem;
+     animation: float 3s ease-in-out infinite;
             }
 
 }
          .profile-pic {
                     border-radius: 0%;
-                    margin-left: 340px;
+                    margin-left: 590px;
                      padding: 1px 10px;
-                     margin-top: -150px;/* Adjust as needed */
-                    width: 1309px; /* Adjust as needed */
+                     margin-top: 300px;/* Adjust as needed */
+                    width: 1699px; /* Adjust as needed */
                     height: 500px; /* Adjust as needed */
                     display: block;
 
-<!-- gap: 1rem;-->
-<!--     animation: float 3s ease-in-out infinite;-->
+ gap: 1rem;
+     animation: float 3s ease-in-out infinite;
                 }
 
                 @media (max-width: 768px) {
@@ -522,22 +517,14 @@ h1 {
 <section id="home">
 
     <div class="home-buttons">
-
-            <div class="hover-effect">
-                <button class="flat-button yellow-button" onclick="showSection('resume')">RESUME</button>
-            </div>
-
+        <div class="hand-drawn-text">
+        <button class="flat-button yellow-button" onclick="showSection('resume')">RESUME</button>
+        </div>
     </div>
     <!--    <h1>SOFTWARE TEST AUTOMATION</h1>-->
     <div class="profile-container">
-
-            <div class="hover-effect">
-                <div class="bounce">
-                    <img alt="Profile Picture" class="profile-pic1" src="logog1.png">
-                </div>
-                <img alt="Profile Picture" class="profile-pic" src="profile8.png">
-
-            </div>
+        <img alt="Profile Picture" class="profile-pic1" src="logog1.png">
+        <img alt="Profile Picture" class="profile-pic" src="profile8.png">
     </div>
 
     <div class="container">
@@ -560,7 +547,6 @@ h1 {
             </div>
         </div>
         <div class="neon-text">
-
             <h1>Welcome to Madan Mohan Reddy Test Automation Portfolio</h1>
 
         </div>
@@ -578,11 +564,9 @@ h1 {
     <div class="container">
 
         <div class="neon-text">
-            <div class="hover-effect">
             <h2>ABOUT MADAN</h2>
-            </div>
         </div>
-        <div class="text-glow">
+        <div class="hand-drawn-text">
         <ul>
 
         <li>Madan is Passionate towards Test Automation and his specialization lies in automation frameworks for both UI
@@ -596,6 +580,7 @@ h1 {
         <li>Lastly, He prioritize staying updated on the latest tools, technologies, and methodologies in the field of
             test automation.</li>
             </ul>
+
         </div>
     </div>
 </section>
@@ -603,17 +588,17 @@ h1 {
     <div class="container">
         <div class="left-column">
             <div class="neon-text">
-                <div class="hover-effect">
                 <h2>Experience</h2>
             </div>
-            </div>
+
             <div id="resume-content">
-                <div class="hover-effect">
+                <div class="underline-text">
                     <h3>Senior QE Automation Engineer</h3>
+
                 </div>
 
                 <!--                <p>Sogeti part of Capgemini, Dublin, September 2021 — Present</p>-->
-                <div class="text-glow">
+                <div class="hand-drawn-text">
                 <ul>
                     <li>Working as an SME for UI and Rest assured Automation Framework for all the other automation
                         testers in client environment
@@ -642,15 +627,13 @@ h1 {
         </div>
         <div class="right-column">
             <div class="neon-text">
-                <div class="hover-effect">
                 <h2>Additional Experience</h2>
             </div>
-            </div>
-            <div class="hover-effect">
+            <div class="underline-text">
                 <h3>Test Automation Engineer</h3>
             </div>
             <!--            <p>CapGenSoft Pvt LTD, Hyderabad, September 2014 — September 2018</p>-->
-            <div class="text-glow">
+            <div class="hand-drawn-text">
             <ul>
                 <li>Understanding the requirements and designing and developing automated functional tests</li>
                 <li>Involving in the sprint planning and meetings</li>
@@ -686,17 +669,15 @@ h1 {
 
     <div class="container">
         <div class="neon-text">
-            <div class="hover-effect">
             <h2>Skills</h2>
         </div>
-        </div>
+
         <div class="left-column">
-            <div class="hover-effect">
-                <div class="hover-effect">
+            <div class="underline-text">
                 <h3>Automation Frameworks</h3>
             </div>
-            </div>
-            <div class="text-glow">
+
+            <div class="hand-drawn-text">
                 <ul>
                     <li>Cucumber Framework (BDD)</li>
                     <li>Data-Driven Framework (TDD)</li>
@@ -708,12 +689,12 @@ h1 {
         </div>
         <div class="right-column">
 
-            <div class="hover-effect">
+            <div class="underline-text">
                 <h3>Tools and Programming languages</h3>
 
             </div>
 
-            <div class="text-glow">
+            <div class="hand-drawn-text">
                 <ul>
                     <li>Selenium WebDriver using Java</li>
                     <li>Selenium Grid</li>
@@ -736,27 +717,22 @@ h1 {
 <section id="contact">
     <div class="container">
         <div class="neon-text">
-            <div class="hover-effect">
             <h2>Contact</h2>
         </div>
-        </div>
-        <div class="text-glow">
-
+        <div class="hand-drawn-text">
         <p>Mobile Number: +353 899679102</p>
         <p>Email ID: mmohanreddy319@gmail.com</p>
         <!-- Add contact form or details as needed -->
-        </div>
+    </div>
     </div>
 </section>
 
 <section id="certification">
     <div class="container">
         <div class="neon-text">
-            <div class="hover-effect">
             <h2>Certifications</h2>
         </div>
-        </div>
-        <div class="text-glow">
+        <div class="hand-drawn-text">
         <p>ISTQB Agile Tester</p>
         <p>ISTQB Foundation level</p>
         <p>ISTQB Advanced Test Automation</p>
