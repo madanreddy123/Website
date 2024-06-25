@@ -76,12 +76,15 @@ nav ul li a {
     background-color:  #EB5406;
     transition: background-color 0.3s, color 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+font-weight: bold;
+text-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
 nav ul li a:hover {
     background-color: transparent;
     color: white;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+   text-shadow: 0 0 15px rgba(52, 152, 219, 0.8);
 }
 #home {
 background: url('different.jpg') no-repeat center center/cover;
@@ -261,7 +264,6 @@ top: 58%; /* Adjust the distance from the top */
 right: 40%;
 transform: translateX(-50%);
 z-index: 999; /* Ensure the button is above other content */
-
 display:block;
 }
 
@@ -289,6 +291,9 @@ border: none;
 border-radius: 30px;
 cursor: pointer;
 transition: background-color 0.3s ease;
+color: #FBF6D9;
+font-weight: bold;
+text-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
 @keyframes float {
@@ -300,8 +305,13 @@ transition: background-color 0.3s ease;
     }
 }
 
-#home-buttons button:hover {
-background-color: transparent;
+.home-buttons button:hover {
+ background-color: transparent; /* Fully transparent */
+      color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold; /* Make text bold */
+    text-shadow: 0 0 15px rgba(52, 152, 219, 0.8);
+
 }
         section {
             display: none;
