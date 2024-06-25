@@ -86,9 +86,9 @@ text-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 17px;
-    padding: 4px 8px;
-    border-radius: 20px;
+    font-size: 18px;
+    padding: 5px 7px;
+    border-radius: 26px;
     background-color:  #EB5406;
     transition: background-color 0.3s, color 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -118,9 +118,22 @@ li {
 font-size: 17px;
 font-weight: bold;
 margin-bottom: 10px; /* Adjust margin between list items */
-line-height: 1.6; /* Adjust line height for better readability */
+line-height: 1.9; /* Adjust line height for better readability */
 /* Add any additional styles as needed */
 }
+
+@media (max-width: 768px) {
+
+li {
+font-size: 19px;
+font-weight: bold;
+margin-bottom: 10px; /* Adjust margin between list items */
+line-height: 2.0; /* Adjust line height for better readability */
+/* Add any additional styles as needed */
+}
+
+}
+
 
 .hover-effect {
 transition: transform 0.9s;
@@ -299,7 +312,7 @@ display:block;
 display:block;
 position: absolute;
 top: 90%; /* Adjust the distance from the top */
-left: 46%;
+left: 40%;
 transform: translateX(-50%);
 z-index: 999; /* Ensure the button is above other content */
 
