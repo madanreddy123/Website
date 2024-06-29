@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="section.css">
     <link rel="stylesheet" href="bullet.css">
     <link rel="stylesheet" href="profilepics.css">
-    <link rel="stylesheet" href="Resumebutton.css">
     <link rel="stylesheet" href="h1andh5.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="followme.css">
@@ -102,6 +101,72 @@ nav ul li a:hover {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
    text-shadow: 0 0 15px rgba(52, 152, 219, 0.8);
 }
+
+
+.home-buttons {
+position: absolute;
+top: 58%; /* Adjust the distance from the top */
+right: 40%;
+transform: translateX(-50%);
+z-index: 999; /* Ensure the button is above other content */
+display:block;
+}
+
+.home-buttons button {
+display: inline-block;
+margin: 0 10px;
+padding: 13px 10px;
+font-size: 22px;
+background-color: #EB5406;
+color: white;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+color: #FBF6D9;
+font-weight: bold;
+text-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.home-buttons button:hover {
+ background-color: transparent; /* Fully transparent */
+      color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold; /* Make text bold */
+    text-shadow: 0 0 15px rgba(52, 152, 219, 0.8);
+
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+ .profile-pic1 {
+            border-radius: 20%;
+            margin-left: 90px;
+             padding: 1px 0px;
+             margin-top: -39px;/* Adjust as needed */
+            width: 209px; /* Adjust as needed */
+            height: 190px; /* Adjust as needed */
+            display: block;
+
+        }
+
+ .profile-pic {
+            border-radius: 0%;
+            margin-left: 360px;
+             padding: 1px 10px;
+             margin-top: -150px;/* Adjust as needed */
+            width: 1139px; /* Adjust as needed */
+            height: 500px; /* Adjust as needed */
+            display: block;
+
+<!-- gap: 1rem;-->
+<!--     animation: float 3s ease-in-out infinite;-->
+        }
 }
     </style>
 </head>
