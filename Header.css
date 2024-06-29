@@ -1,0 +1,81 @@
+header {
+background: url('different.jpg'); /* Semi-transparent background */
+padding: 30px 0; /* Adjust padding as needed */
+position: relative;
+z-index: 1000; /* Ensure it stays above other content */
+transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and box-shadow */
+}
+
+header.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+padding: 26px 0; /* Adjust padding when sticky */
+background: transparent; /* Darker background when sticky */
+box-shadow: 0 12px 14px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.5); /* Increased shadow area */
+}
+
+.scroll-down {
+    border-bottom: none; /* Remove border when scrolling down */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 0.4s;
+}
+
+#home {
+background: url('different.jpg') no-repeat center center/cover;
+color: white;
+text-align: center;
+padding: 100px 0;
+position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.6rem; /* Reduce header font size on smaller screens */
+    }
+
+    #home-buttons {
+ font-size: 1.6rem; /* Reduce header font size on smaller screens */
+position: absolute;
+top: 89%; /* Adjust the distance from the top */
+left: 55%;
+transform: translateX(-50%);
+z-index: 999; /* Ensure the button is above other content */
+}
+
+#home-buttons button {
+display: inline-block;
+margin: 0 10px;
+padding: 10px 10px;
+font-size: 24px;
+background-color: #EB5406;
+color: white;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+header {
+background: url('different.jpg'); /* Semi-transparent background */
+padding: 46px 0; /* Adjust padding as needed */
+position: relative;
+z-index: 1000; /* Ensure it stays above other content */
+transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and box-shadow */
+}
+    header.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+padding: 46px 0; /* Adjust padding when sticky */
+background: transparent; /* Darker background when sticky */
+box-shadow: 0 12px 14px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.5); /* Increased shadow area */
+}
+
+}

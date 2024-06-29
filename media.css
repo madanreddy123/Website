@@ -1,0 +1,143 @@
+@media (max-width: 768px) {
+
+li {
+font-size: 17px;
+font-weight: bold;
+margin-bottom: 10px; /* Adjust margin between list items */
+line-height: 2.0; /* Adjust line height for better readability */
+/* Add any additional styles as needed */
+}
+
+}
+
+@media (max-width: 768px) {
+
+    .hand-drawn-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+.gradient-text {
+    font-size: 2.5rem;
+}
+}
+
+@media (max-width: 768px) {
+.neon-text {
+    font-size: 2.5rem;
+}
+}
+
+@media (max-width: 768px) {
+.neon-text1 {
+    font-size: 2.5rem;
+}
+}
+
+/* Media query for adjusting layout on mobile devices */
+@media (max-width: 768px) {
+     .follow-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .follow-me p {
+        margin-bottom: 10px; /* Adjust as needed */
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width:528px){
+    .profile-pic1 {
+        display: block;
+        width: 205px;
+         margin-left: 25px;
+        height: 195px;
+        left: 1%;
+         padding: 1px 35px;
+         margin-top: -100px;/* Adjust as needed */
+
+    }
+
+    }
+
+
+       @media (max-width:728px){
+
+            .profile-pic1 {
+            display: block;
+            width: 205px;
+             margin-left: 20px;
+            height: 195px;
+            left: 1%;
+             padding: 1px 35px;
+             margin-top: -100px;/* Adjust as needed */
+
+        }
+
+     .home-buttons {
+    display:block;
+    position: centre;
+     font-size: 19px;
+        padding: 9px 13px;
+    top: 88%; /* Adjust the distance from the top */
+    left: 43%;
+    transform: translateX(-50%);
+    z-index: 999; /* Ensure the button is above other content */
+
+    }
+        }
+
+
+        @media (min-width: 729px) and (max-width:1154px){
+
+            .profile-pic1 {
+                display: block;
+                width: 125px;
+                 margin-left: 50px;
+                height: 115px;
+                left: 1%;
+                 padding: 1px 35px;
+                 margin-top: -90px;/* Adjust as needed */
+
+            }
+        .profile-pic {
+          border-radius: 0%;
+                    margin-left: 200px;
+                     padding: 1px 10px;
+                     margin-top: -90px;/* Adjust as needed */
+                    width: 679px; /* Adjust as needed */
+                    height: 300px; /* Adjust as needed */
+                    display: block;
+
+        }
+
+        .home-buttons {
+        display:block;
+        position: centre;
+         font-size: 19px;
+            padding: 9px 17px;
+        top: 88%; /* Adjust the distance from the top */
+        left: 48%;
+        transform: translateX(-50%);
+        z-index: 999; /* Ensure the button is above other content */
+
+        }
+
+        }
+
+
+        @media (max-width: 768px) {
+        .menu li {
+        margin-bottom: 15px; /* Increase spacing between items */
+        }
+        }
+
+        @media (max-width: 728px) {
+            .profile-pic {
+                display: none;
+            }
+
+        }

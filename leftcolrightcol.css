@@ -1,0 +1,17 @@
+ .left-column, .right-column {
+            width: 48%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .left-column {
+            margin-right: 2%;
+        }
+        .left-column ul, .right-column ul {
+    list-style-type: disc; /* Change list style type to display bullet points */
+    padding-left: 20px; /* Add padding to adjust bullet point position */
+}
+
+.right-column ul li, .left-column ul li {
+    padding-bottom: 5px;
+}

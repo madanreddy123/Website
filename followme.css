@@ -1,0 +1,8 @@
+.follow-me {
+    display: flex;
+    align-items: center;
+}
+
+.follow-me p {
+    margin-right: 10px; /* Adjust as needed */
+}
