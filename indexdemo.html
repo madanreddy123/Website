@@ -11,11 +11,6 @@
     <link rel="stylesheet" href="bullet.css">
     <link rel="stylesheet" href="ResumeButton.css">
     <link rel="stylesheet" href="leftcolrightcol.css">
-    <link rel="stylesheet" href="section.css">
-    <link rel="stylesheet" href="followme.css">
-    <link rel="stylesheet" href="headerbutton.css">
-
-
     <style>
 
 
@@ -32,6 +27,38 @@ body, html {
 }
 
 
+
+     nav {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+       nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 8px 9px;
+    border-radius: 30px;
+    background-color:  #EB5406;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+font-weight: bold;
+text-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
 
 
 @media (max-width: 768px) {
@@ -68,7 +95,12 @@ font-weight: bold;
 }
 
 
-
+nav ul li a:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+   text-shadow: 0 0 15px rgba(52, 152, 219, 0.8);
+}
 
 
 @media (max-width: 768px) {
@@ -83,6 +115,55 @@ line-height: 2.0; /* Adjust line height for better readability */
 
 }
 
+        section {
+            display: none;
+            padding: 50px 0;
+            background: url('nightforest.jpg') no-repeat center center/cover;
+            color: #FFF9E3;
+        }
+
+        section .container {
+          background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+            backdrop-filter: blur(40px); /* Optional: Apply blur effect */
+
+        }
+
+        section h2 {
+            text-align: center;
+            margin-top: 1px;
+           font-size: 20px;
+           margin-bottom: 20px; /* Adjust as needed */
+           padding-bottom: 10px; /* Adjust as needed */
+<!--                   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Example box shadow */-->
+        }
+
+         section h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 21px;
+        }
+
+          section p {
+            text-align: centre;
+            margin-bottom: 20px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+
+
+
+.follow-me {
+    display: flex;
+    align-items: center;
+}
+
+.follow-me p {
+    margin-right: 10px; /* Adjust as needed */
+}
 
 /* Media query for adjusting layout on mobile devices */
 @media (max-width: 768px) {
@@ -192,7 +273,7 @@ z-index: 999; /* Ensure the button is above other content */
 }
 
 
-   @media (min-width: 729px) and (max-width:1154px){
+   @media (min-width: 729px) and (max-width:1506px){
 
     .profile-pic1 {
         display: block;
@@ -222,6 +303,44 @@ position: centre;
     padding: 9px 17px;
 top: 88%; /* Adjust the distance from the top */
 left: 48%;
+transform: translateX(-50%);
+z-index: 999; /* Ensure the button is above other content */
+
+}
+
+}
+
+
+ @media (min-width: 1506px) and (max-width:2154px){
+
+    .profile-pic1 {
+        display: block;
+        width: 225px;
+         margin-left: 55px;
+        height: 195px;
+        left: 1%;
+         padding: 1px 15px;
+         margin-top: -90px;/* Adjust as needed */
+
+    }
+.profile-pic {
+  border-radius: 0%;
+            margin-left: 350px;
+             padding: 1px 10px;
+             margin-top: -90px;/* Adjust as needed */
+            width: 1150px; /* Adjust as needed */
+            height: 460px; /* Adjust as needed */
+            display: block;
+
+}
+
+.home-buttons {
+display:block;
+position: centre;
+ font-size: 19px;
+    padding: 9px 17px;
+top: 90%; /* Adjust the distance from the top */
+left: 50%;
 transform: translateX(-50%);
 z-index: 999; /* Ensure the button is above other content */
 
